@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo_fatec.jpg" alt="Logo Fatec">
+        </div>
+        <div class="navbar-info">
+            <p>Curso: AMS Análise e Desenvolvimento de Sistemas</p>
+            <p>Unidade: Fatec Taquaritinga</p>
+        </div>
+    </nav>
+    <h1>Dashboard de Leitura</h1>
+    <div class="container">
+        <h2>Últimas 20 Medições</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Temperatura (°C)</th>
+                    <th>Umidade (%)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div class="container">
+        <canvas id="temp-chart"></canvas>
+    </div>
+    <div class="container">
+        <canvas id="humidity-chart"></canvas>
+    </div>
+    <div class="container">
+        <canvas id="avg-temp-chart"></canvas>
+    </div>
+    <div class="container">
+        <canvas id="avg-humidity-chart"></canvas>
+    </div>
+    <script src="scripts.js" type="module"></script>
+</body>
+</html>
